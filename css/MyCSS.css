@@ -1,0 +1,283 @@
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbarButton, #navbarButton1, #navbarButton2 {
+    color: white;
+}
+
+#navbarButton:hover,
+#navbarButton1:hover,
+#navbarButton2:hover {
+    color: black;
+	cursor: pointer;
+}
+
+#navbarButton, #navbarButton1, #navbarButton2 {
+    margin-left: 10px;
+}
+
+#navbarButton1.pressed,
+#navbarButton2.pressed {
+    background-color: white;
+    color: black;
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#loginButton {
+    margin-left: 10px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.jumbotron p {
+    font-size: 16px;
+}
+
+.mainsection {
+	font-size: 20px;
+	padding-top: 20px;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)), url('../images/loginPage.PNG');
+	background-position: center;
+	min-height: 540px;
+	overflow: auto; 
+}
+
+.list-locations li {
+    margin-bottom: 50px;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+}
+
+.location-name {
+	font-weight: bold;
+    margin-right: 10px;
+}
+
+.visited-date {
+	font-weight: lighter;
+    font-size: medium;
+	font-style: italic;
+}
+
+.description {
+	font-size: medium;
+	font-weight: lighter;
+	text-align: justify;
+}
+
+/* Centering container */
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap; /* Allow multiple rows if needed */
+}
+
+/* Default style for the image */
+.image-display {
+	max-height: 400px;
+	margin: 0 10px 10px;
+}
+
+.image-label {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+    color: gray;
+}
+
+/* Style the address input */
+.address-input {
+    width: 300px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    word-wrap: break-word; /* Wrap long words to the next line */
+    height: auto; /* Allow the input box height to adjust based on content */
+}
+
+.address {
+	font-size: 20px;
+}
+
+/* styling for review section */
+.form-group {
+    position: relative;
+}
+
+.review-count {
+	font-size: 20px;
+    font-weight: bold;
+}
+
+.review-form textarea {
+    max-width: 700px;
+	margin-bottom: 10px;
+}
+
+.review-form textarea[placeholder] {
+    color: grey;
+}
+
+.char-count {
+	position: absolute;
+    bottom: 5px;
+    right: 10px;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.char-count.over-limit {
+	color: red;
+}
+
+.review-list {
+    list-style-type: none;
+	margin-left: 30px;
+}
+
+.user-info-container {
+    display: flex;
+    align-items: center;
+}
+
+.review-user-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Adjust spacing between icon and info */
+}
+
+.user-info {
+	font-size: 16px;
+    font-weight: bold;
+}
+
+.review-content {
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: justify;
+}
+
+.load-more-reviews-btn, .show-lesser-reviews-btn {
+	margin-left: 30px;
+}
+
+/* styling for login page */
+#login_form, #signup_form {
+	margin-top: 50px;
+}
+
+#login_form h3,
+#signup_form h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+form button[type="button"] {
+	width: 200px;
+	height: 40px;
+}
+
+.form-group label {
+    font-size: 16px;
+}
+
+/* for text at about me page */
+.mainsection .intro {
+	font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: teal;
+}
+
+.mainsection input[type="button"] {
+    font-size: 16px;
+	width: 100px;
+	height: 30px;
+}
+
+.footerbar {
+	width: 100%;
+	height: 100px;
+	background-color: teal;
+	font-size: 28px;
+	text-align: center;
+	position: relative;
+}
+
+.footerbar .footer-links {
+    position: absolute;
+    left: 35px;
+    bottom: 40px;
+    line-height: 0.6;
+}
+
+.footerbar .footer-links a {
+	font-size: 14px;
+	display: block;
+	color: lightgray;
+}
+
+.footerbar .footer-links a:hover {
+	font-size: 14px;
+	display: block;
+	color: white;
+}
+
+.footerbar .social-icons {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+}
+
+.footerbar .copyright {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* social-icons properties shared between footerbar and mainsection */
+/********************************************************************/
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons a {
+    margin-left: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+/* Tooltip styles */
+.social-icons a:hover::after {
+    content: attr(title); /* Display the title attribute content as tooltip */
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: calc(100% + 5px); /* Position the tooltip 8px above the bottom of the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* Prevent line breaks in long titles */
+	font-size: 12px;
+}
+
+/********************************************************************/

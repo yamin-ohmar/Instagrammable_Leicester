@@ -1,0 +1,313 @@
+<DOCTYPE HTML>
+<html>
+
+<head>
+    <title> Home </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="css/MyCSS.css">
+	<script type="text/javascript" src="scripts/login.js"> </script>
+</head>
+
+<body>
+
+<!-- Fixed navigation bar on top using BootStrap -->
+<div class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: teal;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/morelocations.html">More Locations</a>
+            </li>
+        </ul>
+    </div>
+	<h2 class="navbar-brand"> Instagrammable Leicester </h2>
+	<a id="navbarButton1" class="btn btn-outline-light" onclick="swapStyleSheet('MyCSS.css')" style="font-size: 12px;">A</a>
+    <a id="navbarButton2" class="btn btn-outline-light" onclick="swapStyleSheet('AlternativeCSS.css')" style="font-size: 20px;">A</a>
+    <a href="pages/login.html" id="loginButton" class="btn btn-outline-light" style="font-size: 18px;">Login</a>
+</div>
+
+<!-- big header just for index page -->
+<div class="jumbotron text-center">
+	<h1> Instagrammable Locations in Leicester </h1>
+	<p> Here are 5 amazing places in Leicester for you to explore! </p>
+</div>
+
+<!-- List of Locations -->
+<div class="mainsection">
+    <div class="container mb-3">
+    <ol class="list-locations">
+
+        <!-- Location 1 -->
+        <li class="list-location-1">
+            <div class="location-info">
+                <h3 class="location-name">Castle Gardens</h3>
+                <span class="visited-date">(Visited date: 23/03/2024 - Spring)</span>
+            </div>
+            <p class="description">Leicester Castle Gardens is a historic site located in Leicester, England. 
+				It's a beautiful green space situated in the heart of the city, adjacent to Leicester Castle. 
+				The gardens offer a peaceful retreat for locals and visitors alike, 
+				with its picturesque surroundings and historical significance. 
+				It's a lovely place to explore and relax, offering a glimpse into Leicester's rich heritage.</p>  
+
+            <!-- Image link to Instagram page -->
+            <div class="image-container">
+                <a href="https://www.instagram.com/p/C6oG4xTshgn" target="_blank">
+                    <img class="image-display" src="images/CastleGardens.JPG" alt="Castle Gardens in the Spring">
+                </a>
+            </div>
+            <div class="image-label">Click on the picture for more photos on my Instagram post</div>
+
+            <!-- Address textbox -->
+            <label for="address" class="form-label address">Address:</label>
+            <input class="form-control address-input" type="text" value="&#128205; 20 The Newarke, Leicester LE2 7BY" readonly>
+
+            <!-- Review section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="review-count">Reviews</h4>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <textarea class="form-control review-input" id="reviewInput" rows="3" placeholder="Please login to write about your experience or read other visitors' experiences..." disabled></textarea>
+                                <span class="char-count">0 / 250</span>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="btn btn-info loginReviewBtn" id="login-for-review">Login for Reviews</button>
+                                <button type="button" class="btn btn-info submitReviewBtn" id="submitReviewButton" style="display: none;" disabled>Submit Review</button>
+                            </div>
+                        </form>
+                        <ul class="list-group review-list"></ul>
+                        <button type="button" class="btn btn-link load-more-reviews-btn" style="display: none;">Load more reviews</button>
+                        <button type="button" class="btn btn-link show-lesser-reviews-btn" style="display: none;">Show lesser reviews</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- Location 2 -->
+        <li class="list-location-2">
+            <div class="location-info">
+                <h3 class="location-name">Town Hall Square</h3>
+                <span class="visited-date">(Visited date: 20/01/2024 - Winter)</span>
+            </div>
+            <p class="description">Leicester Town Hall Square features a fountain that is a prominent landmark in the city center. 
+                The fountain is located in front of the Leicester Town Hall, which is an impressive Victorian building. 
+                The fountain itself is an ornate structure, often adorned with colorful lights during special events or festivals. 
+                It serves as a focal point for gatherings and events in the square, and it's also a popular spot for locals and tourists to relax and enjoy the surroundings.</p>
+
+            <!-- Image link to Instagram page -->
+            <div class="image-container">
+                <a href="https://www.instagram.com/p/C6oPogrs_ut" target="_blank">
+                    <img class="image-display" src="images/TownHallSquare.jpg" alt="Town Hall Square fountain during the winter">
+                </a>
+            </div>
+            <div class="image-label">Click on the picture for more photos on my Instagram post</div>
+
+            <!-- Address textbox -->
+            <label for="address" class="form-label address">Address:</label>
+            <input class="form-control address-input" type="text" value="&#128205; Town Hall Square, Leicester LE1 9BG" readonly>
+            
+            <!-- Review section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="review-count">Reviews</h4>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <textarea class="form-control review-input" id="reviewInput" rows="3" placeholder="Please login to write about your experience or read other visitors' experiences..." disabled></textarea>
+                                <span class="char-count">0 / 250</span>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="btn btn-info loginReviewBtn" id="login-for-review">Login for Reviews</button>
+                                <button type="button" class="btn btn-info submitReviewBtn" id="submitReviewButton" style="display: none;" disabled>Submit Review</button>
+                            </div>
+                        </form>
+                        <ul class="list-group review-list"></ul>
+                        <button type="button" class="btn btn-link load-more-reviews-btn" style="display: none;">Load more reviews</button>
+                        <button type="button" class="btn btn-link show-lesser-reviews-btn" style="display: none;">Show lesser reviews</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- Location 3 -->
+        <li class="list-location-3">
+            <div class="location-info">
+                <h3 class="location-name">Abbey Park</h3>
+                <span class="visited-date">(Visited date: 04/09/2023 - Autumn)</span>
+            </div>
+            <p class="description">Abbey Park is a picturesque public park located in Leicester, England. 
+                It covers a significant area along the River Soar and is a popular destination for both locals and visitors. 
+                The park features beautiful gardens, open spaces, and tree-lined pathways, providing a tranquil escape from the city's hustle and bustle.</p>
+
+                <p class="description">One of the notable features of Abbey Park is the remains of the 12th-century Leicester Abbey, which can still be seen within the park. 
+                    The ruins add a sense of history and character to the surroundings. 
+                    Additionally, the park offers amenities such as playgrounds, sports facilities, and a boating lake, making it a versatile recreational space for people of all ages.</p>
+
+            <!-- Image link to Instagram page -->
+            <div class="image-container">
+                <a href="https://www.instagram.com/p/C6oU2wCMcBF" target="_blank">
+                    <img class="image-display" src="images/AbbeyPark.JPG" alt="Abbey Park in Autumn">
+                </a>
+            </div>
+            <div class="image-label">Click on the picture for more photos on my Instagram post</div>
+
+            <!-- Address textbox -->
+            <label for="address" class="form-label address">Address:</label>
+            <input class="form-control address-input" type="text" value="&#128205; Abbey Park Rd, Leicester LE4 5AQ" readonly>
+            
+            <!-- Review section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="review-count">Reviews</h4>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <textarea class="form-control review-input" id="reviewInput" rows="3" placeholder="Please login to write about your experience or read other visitors' experiences..." disabled></textarea>
+                                <span class="char-count">0 / 250</span>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="btn btn-info loginReviewBtn" id="login-for-review">Login for Reviews</button>
+                                <button type="button" class="btn btn-info submitReviewBtn" id="submitReviewButton" style="display: none;" disabled>Submit Review</button>
+                            </div>
+                        </form>
+                        <ul class="list-group review-list"></ul>
+                        <button type="button" class="btn btn-link load-more-reviews-btn" style="display: none;">Load more reviews</button>
+                        <button type="button" class="btn btn-link show-lesser-reviews-btn" style="display: none;">Show lesser reviews</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- Location 4 -->
+        <li class="list-location-4">
+            <div class="location-info">
+                <h3 class="location-name">New Walk</h3>
+                <span class="visited-date">(Visited date: 25/10/2023 - Autumn)</span>
+            </div>
+            <p class="description">Leicester's New Walk is a charming pedestrian promenade in the city, known for its picturesque tree-lined avenue. 
+                It's one of the finest examples of a Georgian pedestrian street in the UK and was constructed in the early 19th century. 
+                The New Walk runs for about half a mile from Leicester's Victorian railway station to De Montfort Square.</p>
+
+                <p class="description">The walk is also home to a variety of shops, cafes, and businesses, making it a vibrant hub of activity in the city. 
+                    The New Walk Museum and Art Gallery is located on New Walk in Leicester. 
+                    It's one of the city's major cultural institutions and a popular destination for visitors interested in history, art, and natural sciences.</p>
+
+            <!-- Image link to Instagram page -->
+            <div class="image-container">
+                <a href="https://www.instagram.com/p/C6oX_Q-s0cT" target="_blank">
+                    <img class="image-display" src="images/NewWalk.JPG" alt="Along the New Walk in Autumn">
+                </a>
+            </div>
+            <div class="image-label">Click on the picture for more photos on my Instagram post</div>
+
+            <!-- Address textbox -->
+            <label for="address" class="form-label address">Address:</label>
+            <input class="form-control address-input" type="text" value="&#128205; New Walk, Leicester LE1 7EA" readonly>
+            
+            <!-- Review section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="review-count">Reviews</h4>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <textarea class="form-control review-input" id="reviewInput" rows="3" placeholder="Please login to write about your experience or read other visitors' experiences..." disabled></textarea>
+                                <span class="char-count">0 / 250</span>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="btn btn-info loginReviewBtn" id="login-for-review">Login for Reviews</button>
+                                <button type="button" class="btn btn-info submitReviewBtn" id="submitReviewButton" style="display: none;" disabled>Submit Review</button>
+                            </div>
+                        </form>
+                        <ul class="list-group review-list"></ul>
+                        <button type="button" class="btn btn-link load-more-reviews-btn" style="display: none;">Load more reviews</button>
+                        <button type="button" class="btn btn-link show-lesser-reviews-btn" style="display: none;">Show lesser reviews</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- Location 5 -->
+        <li class="list-location-5">
+            <div class="location-info">
+                <h3 class="location-name">Castle View</h3>
+                <span class="visited-date">(Visited date: 14/06/2023 - Summer)</span>
+            </div>
+            <p class="description">Castle View is a street located near St. Mary de Castro Church in Leicester. 
+                It's named for its proximity to Leicester Castle, which historically stood nearby. 
+                The area around Castle View and St. Mary de Castro Church has a rich history dating back to medieval times.
+                Visitors to Castle View can appreciate the medieval charm of the area and enjoy glimpses of Leicester's rich history as they explore the surroundings.</p>
+
+            <!-- Image link to Instagram page -->
+            <div class="image-container">
+                <a href="https://www.instagram.com/p/C6odQ4osWEu" target="_blank">
+                    <img class="image-display" src="images/CastleView.JPG" alt="Along the Castle View street in Summer">
+                </a>
+                <a href="https://www.instagram.com/p/C6odQ4osWEu" target="_blank">
+                    <img class="image-display" src="images/CastleView_Church.JPG" alt="Near St Mary de Castro Church on Castle View">
+                </a>
+            </div>
+            <div class="image-label">Click on the picture for more photos on my Instagram post</div>
+
+            <!-- Address textbox -->
+            <label for="address" class="form-label address">Address:</label>
+            <input class="form-control address-input" type="text" value="&#128205; Castle View, Leicester LE2 7BY" readonly>
+            
+            <!-- Review section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="review-count">Reviews</h4>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <textarea class="form-control review-input" id="reviewInput" rows="3" placeholder="Please login to write about your experience or read other visitors' experiences..." disabled></textarea>
+                                <span class="char-count">0 / 250</span>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="btn btn-info loginReviewBtn" id="login-for-review">Login for Reviews</button>
+                                <button type="button" class="btn btn-info submitReviewBtn" id="submitReviewButton" style="display: none;" disabled>Submit Review</button>
+                            </div>
+                        </form>
+                        <ul class="list-group review-list"></ul>
+                        <button type="button" class="btn btn-link load-more-reviews-btn" style="display: none;">Load more reviews</button>
+                        <button type="button" class="btn btn-link show-lesser-reviews-btn" style="display: none;">Show lesser reviews</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+	</ol>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footerbar">
+	<div class="footer-links">
+        <a href="pages/faq.html">FAQ Page</a><br>
+        <a href="pages/privacypolicy.html">Privacy Policy</a>
+    </div>
+	<div class="social-icons">
+        <a href="https://www.facebook.com" title="Facebook"><img src="images/facebook_icon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/yamintravel20/" title="Instagram"><img src="images/IG_icon.png" alt="Instagram"></a>
+        <a href="mailto:yaminohmar@gmail.com" title="Email"><img src="images/email_icon.png" alt="Email"></a>
+    </div>
+	<p class="copyright"> Copyright &copy; 2024 All Rights Reserved </p>
+</div>
+
+<!-- more scripts -->
+<script type="text/javascript" src="scripts/imageDisplay.js"> </script>
+<script type="text/javascript" src="scripts/review.js"> </script>
+
+</body>
+</html>
